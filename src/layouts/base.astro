@@ -1,0 +1,58 @@
+---
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Mominizer | My AMU Deen App</title>
+  </head>
+  <body class="bg-cyan-950 min-h-screen relative w-full text-white;">
+    <header class="absolute top-0 w-full">
+      <nav class="flex w-full justify-between bg-cyan-600 p-2 text-white">
+        <div class="flex items-center gap-3">
+          <img src="https://api.iconify.design/mdi:menu.svg?color=whitesmoke" class="size-8" />
+          <p class="text-2xl font-semibold">Rizzq</p>
+        </div>
+        <div class="flex items-center gap-4">
+          <img src="https://api.iconify.design/mdi:bell-outline.svg?color=white" class="size-6" />
+          <img src="https://picsum.photos/25" class="rounded-full border-2 border-cyan-900" />
+        </div>
+      </nav>
+    </header>
+    <main class="relative min-h-screen overflow-y-auto px-4 py-16">
+      <slot />
+      <button class="absolute bottom-16 right-4 flex items-center gap-2 rounded-l-full rounded-r-full bg-cyan-500 bg-opacity-30 px-4 py-1 text-cyan-50">
+        <img src="https://api.iconify.design/hugeicons:muslim.svg?color=%23e6f6ee" class="size-5" />
+        <span>Ghani AI</span>
+      </button>
+    </main>
+    <footer class="absolute bottom-0 left-0 w-full">
+      <div class="flex w-full justify-evenly bg-cyan-500 py-1 text-white">
+        <div class="flex w-2/12 flex-col items-center rounded p-1 hover:bg-cyan-300">
+          <img src="https://api.iconify.design/mdi:book-education-outline.svg?color=%23154a5e&flip=horizontal" class="size-6" />
+          <span class="text-xs font-semibold lowercase text-cyan-900">learn</span>
+        </div>
+    
+        <div class="flex w-2/12 flex-col items-center rounded p-1 hover:bg-cyan-300">
+          <img src="https://api.iconify.design/lineicons:investment.svg?color=%23154a5e" class="size-6" />
+          <span class="text-xs font-semibold lowercase text-cyan-900">invest</span>
+        </div>
+    
+        <div class="flex w-2/12 flex-col items-center rounded p-1 hover:bg-cyan-300">
+          <img src="https://api.iconify.design/mdi:school-outline.svg?color=%23154a5e" class="size-6" />
+          <span class="text-xs font-semibold lowercase text-cyan-900">scholarship</span>
+        </div>
+        <div class="flex w-2/12 flex-col items-center rounded p-1 hover:bg-cyan-300">
+          <img src="https://api.iconify.design/mdi:briefcase-search-outline.svg?color=%23154a5e" class="size-6" />
+          <span class="text-xs font-semibold lowercase text-cyan-900">work</span>
+        </div>
+        <div class="flex w-2/12 flex-col items-center rounded p-1 hover:bg-cyan-300">
+          <img src="https://api.iconify.design/mdi:dots-horizontal.svg?color=%23154a5e" class="size-6" />
+          <span class="text-xs font-semibold lowercase text-cyan-900">more</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
